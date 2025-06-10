@@ -1,0 +1,318 @@
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-content {
+    margin: 78px 0;
+    display: flex;
+    align-items: center;
+}
+
+.content__icon {
+    width: 150px;
+    height: 150px;
+    margin-left: 150px;
+}
+
+.content__icon img {
+    border-radius: 50%;
+}
+
+.content__icon img:not(.empty){
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.top-content p {
+    width: 250px;
+    height: 65px;
+    line-height: 65px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    padding-left: 57px;
+    white-space: nowrap;
+}
+
+.top-content a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FF5555;
+    color: #FF5555;
+    border-radius: 10px;
+    width: 310px;
+    height: 59px;
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 100px;
+    white-space: nowrap;
+}
+
+.tabs {
+    max-width: 100%;
+    height: 47px;
+    display: flex;
+    gap: 52px;
+    border-bottom: 2px solid #5F5F5F;
+}
+
+.tabs a {
+    width: 155px;
+    height: 40px;
+    text-decoration: none;
+    color: #5F5F5F;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.tabs a:first-child {
+    margin-left: 129px;
+}
+
+.tabs a.active {
+    color: #FF0000;
+}
+
+.tab-content {
+    margin: 59px 69px;
+    width: 100%;
+    max-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    overflow-x: hidden;
+}
+
+.content__item {
+    width: 290px;
+    height: 320px;
+    position: relative;
+}
+
+.content__link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.content__img {
+    width: 290px;
+    height: 290px;
+    border-radius: 4px;
+}
+
+.sold-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.content__name p{
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+    color: black;
+    word-break: break-all;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .top-content {
+        margin: 88px 0;
+    }
+
+    .content__icon {
+        width: 170px;
+        height: 170px;
+        margin-left: 310px;
+    }
+
+    .top-content p {
+        min-width: 250px;
+        font-size: 40px;
+        padding-left: 67px;
+    }
+
+    .top-content a {
+        width: 320px;
+        height: 69px;
+        font-size: 28px;
+        margin-left: 250px;
+    }
+
+    .tabs {
+        max-width: 100%;
+        height: 57px;
+        gap: 62px;
+    }
+
+    .tabs a {
+        width: 170px;
+        height: 40px;
+        font-size: 28px;
+    }
+
+    .tabs a:first-child {
+        margin-left: 140px;
+    }
+
+    .tab-content {
+        margin: 69px 79px;
+        gap: 60px;
+    }
+
+    .content__item {
+        width: 300px;
+        height: 330px;
+    }
+
+    .content__img {
+        width: 300px;
+        height: 300px;
+        border-radius: 4px;
+    }
+
+    .sold-label {
+        font-size: 60px;
+    }
+
+    .content__name p {
+        font-size: 27px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .top-content {
+        margin: 68px 0;
+    }
+
+    .content__icon {
+        width: 130px;
+        height: 130px;
+        margin-left: 100px;
+    }
+
+    .top-content p {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .top-content a {
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+        margin-left: 70px;
+    }
+
+    .tabs {
+        max-width: 100%;
+        height: 35px;
+        gap: 30px;
+    }
+
+    .tabs a {
+        width: 155px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .tabs a:first-child {
+        margin-left: 90px;
+    }
+
+    .tab-content {
+        margin: 39px 49px;
+        gap: 40px;
+    }
+
+    .content__item {
+        width: 180px;
+        height: 200px;
+    }
+
+    .content__img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .sold-label {
+        font-size: 50px;
+    }
+
+    .content__name p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .top-content {
+        margin: 68px 0;
+    }
+
+    .content__icon {
+        width: 80px;
+        height: 80px;
+        margin-left: 30px;
+    }
+
+    .top-content p {
+        font-size: 12px;
+        padding-left: 10px;
+        width: 100px;
+    }
+
+    .top-content a {
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+        margin-left: 40px;
+    }
+
+    .tabs {
+        max-width: 100%;
+        height: 25px;
+        gap: 20px;
+    }
+
+    .tabs a {
+        width: 100px;
+        height: 24px;
+        font-size: 10px;
+    }
+
+    .tabs a:first-child {
+        margin-left: 45px;
+    }
+
+    .tab-content {
+        margin: 29px 39px;
+        gap: 20px;
+    }
+
+    .content__item {
+        width: 130px;
+        height: 150px;
+    }
+
+    .content__img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .sold-label {
+        font-size: 40px;
+    }
+
+    .content__name p {
+        font-size: 10px;
+    }
+}

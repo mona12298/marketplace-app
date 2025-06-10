@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    margin: 95px 65px;
+}
+
+.item-img {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    margin: 36px 45px;
+    position: relative;
+}
+
+.item-img img {
+    width: 100%;
+}
+
+.sold-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FF5555;
+    font-weight: 700;
+    font-size: 50px;
+    z-index: 10;
+}
+
+.item-details{
+    padding: 0 65px;
+    margin: 0;
+    width: 570px;
+}
+
+.item-details__main{
+    height: 273px;
+}
+.item-details__name {
+    height: 77px;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.item-details__brand{
+    height: 28px;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+.item-details__price{
+    height: 45px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.item-details__icons{
+    width: 144px;
+    height: 67px;
+    margin: 10px 0;
+    padding-left: 45px;
+    display: flex;
+    gap: 64px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.item-details__icons--like label {
+    cursor: pointer;
+}
+
+.item-details__icons--like input {
+    display: none;
+}
+
+.item-details__icons--like img.liked {
+    filter: brightness(1.2) sepia(1) hue-rotate(-40deg) saturate(8);
+}
+
+.item-details__icons--like img,
+.item-details__icons--comment img{
+    width: 40px;
+    height: 40px;
+}
+.item-details__icons--like span,
+.item-details__icons--comment span {
+    width: 9px;
+    height: 22px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.purchase-button {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 56px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #FF5555;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-details__description h4{
+    height: 74px;
+    line-height: 74px;
+    font-weight: 700;
+    font-size: 36px;
+}
+.item-details__description p{
+    font-weight: 400;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.item-details__info h4{
+    height: 100px;
+    line-height: 100px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.item-details__category{
+    display: flex;
+    width: 100%;
+    gap: 61px;
+}
+
+.item-details__category__ttl,
+.item-details__condition__ttl{
+    padding-right: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    width: 130px;
+    white-space: nowrap;
+}
+
+.item-details__category__data{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    width: calc(100% - 130px);
+    flex-wrap: wrap;
+}
+
+.item-details__category__data p{
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    min-width: 100px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    word-break: normal;
+}
+
+.item-details__condition{
+    display: flex;
+    height: 100px;
+    line-height: 100px;
+    gap: 61px;
+}
+
+.item-details__condition__label {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.item-details__comments h4 {
+    color: #5F5F5F;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    height: 100px;
+}
+
+.item-details__comment-info {
+    display: flex;
+    height: 70px;
+}
+
+.item-details__comment-info__user-icon img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+}
+
+.empty {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #D9D9D9;
+}
+
+.item-details__comment-info__user-name{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 70px;
+    padding-left: 18px;
+}
+
+.item-details__comment__text{
+    min-height: 70px;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px 5px;
+    margin: 10px 0;
+}
+
+.item-details__comment-input{
+    width: 100%;
+    min-height: 246px;
+    border-color: #5F5F5F;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.item-details__comment-input h5 {
+    height: 50px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.item-details__comment-input textarea {
+    min-height: 246px;
+    width: 100%;
+    border: 2px solid #5F5F5F;
+    border-radius: 5px;
+}
+
+.comment-button {
+    height: 56px;
+    width: 100%;
+    border-radius: 4px;
+    margin: 15px 0;
+    background-color: #FF5555;
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.comment-button input{
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .item-details {
+        padding: 0 30px;
+        margin: 0;
+        width: 300px;
+    }
+
+    .item-img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .sold-label{
+        font-size: 50px;
+    }
+
+    .item-details__name{
+        font-size: 22px;
+    }
+
+    .item-details__brand{
+        font-size: 10px;
+    }
+
+    .item-details__price{
+        font-size: 15px;
+    }
+
+    .item-details__icons {
+        height: 40px;
+    }
+
+    .item-details__icons--like img,
+    .item-details__icons--comment img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .item-details__icons--like span,
+    .item-details__icons--comment span {
+        width: 5px;
+        height: 16px;
+        font-size: 10px;
+    }
+
+    .purchase-button,
+    .comment-button {
+        font-size: 18px;
+    }
+
+    .item-details__description h4 {
+        font-size: 20px;
+    }
+
+    .item-details__description p {
+        font-size: 16px;
+    }
+
+    .item-details__info h4 {
+        font-size: 20px;
+    }
+
+    .item-details__category__data {
+        width: 180px;
+        gap: 15px;
+    }
+
+    .item-details__category__ttl,
+    .item-details__condition__ttl {
+        padding-right: 30px;
+        font-size: 18px;
+    }
+
+    .item-details__category__data p{
+        font-weight: 400;
+        font-size: 12px;
+        min-width: 80px;
+    }
+
+    .item-details__condition__label {
+        font-size: 12px;
+    }
+
+    .item-details__comments h4 {
+        font-size: 20px;
+    }
+
+    .item-details__comment-info {
+        display: flex;
+        height: 70px;
+    }
+
+    .item-details__comment-info__user-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .empty {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item-details__comment-info__user-name {
+        font-size: 20px;
+    }
+
+    .item-details__comment__text {
+        font-size: 12px;
+    }
+
+    .item-details__comment-input h5 {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper{
+        margin: 15px;
+    }
+
+    .item-details {
+        padding: 0 30px;
+        margin: 0;
+        width: 200px;
+    }
+
+    .item-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sold-label {
+        font-size: 25px;
+    }
+
+    .item-details__main{
+        height: 120px;
+    }
+
+    .item-details__name {
+        font-size: 16px;
+        height: 30px;
+    }
+
+    .item-details__brand {
+        font-size: 5px;
+        height: 10px;
+    }
+
+    .item-details__price {
+        font-size: 10px;
+        height: 25px;
+    }
+
+    .item-details__icons {
+        height: 28px;
+        padding-left: 15px;
+    }
+
+    .item-details__icons--like img,
+    .item-details__icons--comment img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .item-details__icons--like span,
+    .item-details__icons--comment span {
+        width: 3px;
+        height: 10px;
+        font-size: 5px;
+    }
+
+    .purchase-button,
+    .comment-button {
+        font-size: 12px;
+        height: 30px;
+    }
+
+    .item-details__description h4 {
+        font-size: 14px;
+    }
+
+    .item-details__description p {
+        font-size: 10px;
+    }
+
+    .item-details__info h4 {
+        font-size: 14px;
+    }
+
+    .item-details__category{
+        flex-wrap: wrap;
+    }
+
+    .item-details__category__data {
+        flex-basis: 100%;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .item-details__category__ttl,
+    .item-details__condition__ttl {
+        font-size: 10px;
+        flex-basis: 100%;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .item-details__category__data p {
+        font-size: 6px;
+        flex-basis: 100%;
+        width: 100%;
+        height: 18px;
+        line-height: 18px;
+    }
+
+    .item-details__condition__label {
+        font-size: 6px;
+        height: 10px;
+        white-space: nowrap;
+    }
+
+    .item-details__comments h4 {
+        font-size: 14px;
+    }
+
+    .item-details__comment-info {
+        height: 50px;
+    }
+
+    .item-details__comment-info__user-icon img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .empty {
+        width: 25px;
+        height: 25px;
+    }
+
+    .item-details__comment-info__user-name {
+        font-size: 12px;
+        height: 18px;
+    }
+
+    .item-details__comment__text {
+        font-size: 8px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .item-details__comment-input{
+        min-height: 130px;
+    }
+
+
+    .item-details__comment-input h5 {
+        font-size: 8px;
+        height: 20px;
+    }
+
+    .item-details__comment-input textarea {
+        min-height: 100px
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+
+    .item-img {
+        width: 650px;
+        height: 650px;
+    }
+
+    .sold-label {
+        font-size: 100px;
+    }
+
+    .item-details {
+        padding: 0 70px;
+        width: 620px;
+    }
+
+    .item-details__main {
+        height: 300px;
+    }
+
+    .item-details__name {
+        height: 77px;
+        font-size: 50px;
+    }
+
+    .item-details__brand {
+        height: 28px;
+        font-size: 22px;
+    }
+
+    .item-details__price {
+        height: 50px;
+        font-size: 35px;
+    }
+
+    .item-details__icons {
+        width: 155px;
+        height: 75px;
+        margin: 20px 0;
+        padding-left: 50px;
+        gap: 70px;
+    }
+
+    .item-details__icons--like img,
+    .item-details__icons--comment img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .item-details__icons--like span,
+    .item-details__icons--comment span {
+        width: 10px;
+        height: 24px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .purchase-button {
+        height: 60px;
+        margin-bottom: 25px;
+        font-size: 35px;
+    }
+
+    .item-details__description h4 {
+        height: 74px;
+        line-height: 74px;
+        font-size: 42px;
+    }
+
+    .item-details__description p {
+        font-size: 30px;
+    }
+
+    .item-details__info h4 {
+        height: 100px;
+        line-height: 100px;
+        font-size: 42px;
+    }
+
+    .item-details__category__ttl,
+    .item-details__condition__ttl {
+        padding-right: 70px;
+        font-size: 30px;
+        width: 150px;
+        white-space: nowrap;
+    }
+
+    .item-details__category__data {
+        width: calc(100% - 150px);
+    }
+
+    .item-details__category__data p {
+        height: 30px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .item-details__condition__label {
+        font-size: 30px;
+    }
+
+    .item-details__comments h4 {
+        font-size: 42px;
+    }
+
+    .item-details__comment-info__user-icon img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .empty {
+        width: 80px;
+        height: 80px;
+    }
+
+    .item-details__comment-info__user-name {
+        font-size: 40px;
+        padding-left: 23px;
+    }
+
+    .item-details__comment__text {
+        font-size: 28px;
+        padding: 10px 5px;
+        margin: 20px 0;
+    }
+
+    .item-details__comment-input h5 {
+        font-size: 32px;
+    }
+
+    .comment-button {
+        height: 60px;
+        margin: 25px 0;
+        font-size: 35px;
+    }
+
+}
