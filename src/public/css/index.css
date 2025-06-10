@@ -1,0 +1,135 @@
+.content-links {
+    border-bottom: 2px solid #5F5F5F;
+    margin-top: 60px;
+    padding-left: 130px;
+}
+
+.content-link {
+    color: #5F5F5F;
+    text-decoration: none;
+    margin-left: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.content-link.active {
+    color: #FF0000;
+}
+
+.item-list-wrapper {
+    max-width: 100vw;
+    margin: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    overflow-x: hidden;
+}
+
+.item-content{
+    position: relative;
+}
+
+.item-content a{
+    text-decoration: none;
+}
+
+.item-content__link img {
+    max-width: 290px;
+    max-height: 290px;
+    border-radius: 4px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.detail-content {
+    font-size: 25px;
+    color: #000;
+}
+
+.sold-label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .content-links {
+        margin-top: 30px;
+    }
+
+    .content-link {
+        font-size: 16px;
+    }
+
+    .item-list-wrapper {
+        margin: 35px;
+        gap: 35px;
+    }
+    .item-content__link img {
+        max-width: 145px;
+        max-height: 145px;
+    }
+
+    .detail-content {
+        font-size: 16px;
+    }
+
+    .sold-label{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content-links {
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .content-link {
+        font-size: 12px;
+    }
+
+    .item-list-wrapper {
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .item-content__link img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .detail-content {
+        font-size: 12px;
+    }
+
+    .sold-label {
+        font-size: 35px;
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .content-links {
+        margin-top: 40px;
+    }
+
+    .content-link {
+        font-size: 20px;
+    }
+
+    .item-content__link img {
+        max-width: 170px;
+        max-height: 170px;
+    }
+
+    .detail-content {
+        font-size: 20px;
+    }
+
+    .sold-label{
+        font-size: 40px;
+    }
+}
