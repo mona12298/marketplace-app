@@ -20,6 +20,7 @@
 <p>Add PSR-4 autoload mapping? Maps namespace "Monami\MarketplaceApp" to the entered relative path. [src/, n to skip]: src/</p>
 <p>Do you confirm generation [yes]? yes</p>
 <p>composer require --dev phpunit/phpunit</p>
+<p>composer install</p>
 
 <h2>使用技術</h2>
 <p>言語: php 7.4.9</p>
