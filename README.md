@@ -13,14 +13,7 @@
 <p>php artisan migrate</p>
 <p>php artisan db:seed</p>
 <p>php artisan storage:link</p>
-<h3>テスト環境構築</h3>
-<p>docker-compose exec php bash</p>
-<p>composer init</p>
-<p>Package name (<vendor>/<name>) [root/www]: monami/marketplace-app</p>
-<p>Add PSR-4 autoload mapping? Maps namespace "Monami\MarketplaceApp" to the entered relative path. [src/, n to skip]: src/</p>
-<p>Do you confirm generation [yes]? yes</p>
-<p>composer require --dev phpunit/phpunit</p>
-<p>composer install</p>
+
 
 <h2>使用技術</h2>
 <p>言語: php 7.4.9</p>
